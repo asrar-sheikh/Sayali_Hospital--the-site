@@ -1,0 +1,177 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@section Styles{
+    <link href="/css/home.css" rel="stylesheet" />
+}
+<div class="header">
+    <div class="left">
+        <h1>Healing with Heart and Expertise.</h1>
+        <p class="sub-heading">
+            Experience healthcare that truly cares. We combine cutting-edge
+            medicine with heartfelt compassion to guide you toward better
+            health.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn btn-outline-success">Contact Us</a>
+        </div>
+    </div>
+    <div class="right">
+        <img src="~/images/home/doctor-nurses-special-equipment.png" alt="" />
+    </div>
+      <div class="bg-color"></div>
+</div>
+    
+
+<!-- End of Hero section -->
+
+
+<section id="About" class="reveal">
+    <div class="container-mid">
+        <div class="Left col-md-6 reveal">
+            <h2 class="reveal" style="color:blueviolet; font-weight:700; text-align:left">
+                Dedicated to providing exceptional care and fostering a healthier
+                community.
+            </h2 >
+            <p class="reveal">
+                We provide top-quality care with a focus on personalized treatment
+                and compassionate service, ensuring every patient feels supported
+                and valued.
+            </p>
+
+            <div class="features-container reveal">
+                <div class="feature reveal">
+                    <div>
+                        <i class="fa-solid fa-heart-circle-check fa-2xl me-1" style="color: blueviolet;"></i>
+                    </div>
+                    <h3 class="reveal">Expericened Faculty</h3>
+                </div>
+                <p class="reveal">
+                    Our experienced faculty brings a wealth of knowledge and
+                    expertise, dedicated to delivering exceptional care and guidance.
+                    With years of practice, they are committed to advancing healthcare
+                    and nurturing the next generation of medical professionals.
+                </p>
+            </div>
+
+            <div class="features-container reveal">
+                <div class="feature reveal">
+                    <div>
+                        <i class="fa-solid fa-heart-circle-check fa-2xl me-1" style="color: blueviolet;"></i>
+                    </div>
+                    <h3 class="reveal">Cutting-edge Technology</h3>
+                </div>
+                <p class="reveal">
+                    We utilize cutting-edge technology to provide advanced, precise
+                    care. Our commitment to innovation ensures the best possible
+                    outcomes for our patients
+                </p>
+            </div>
+           
+            <a href="#" style="max-width: 10rem;" class="btn btn-outline-success reveal">Learn More</a>
+        </div>
+
+        <div class="right-mid col-md-6 reveal">
+            <img src="~/images/home//hitech.jpg" class="img-fluid reveal" style="max-width: 80% ;" alt="" />
+        </div>
+    </div>
+</section>
+
+<!-- End of about section -->
+
+
+<section id="treatments" class="reveal">
+    <div class="container-bottom reveal">
+        <div class="heading-container reveal">
+            <h2 class="reveal" style="color:blueviolet; font-weight:700; text-align:center;">Treatments We Offer</h2>
+            <p class="reveal">
+                We offer a comprehensive range of treatments tailored to meet the
+                diverse needs of our patients. From routine care to specialized
+                procedures, our expert team is here to support your health journey.
+            </p>
+        </div>
+
+        <div class="treatments-grid reveal">
+            <!-- Treatment 1 -->
+            <div class="treatment-box col-4">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/surgery.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Surgical Procedures</h3>
+                    <p class="text-light">
+                        Our skilled surgeons perform a wide range of procedures with precision
+                        and care, ensuring the best outcomes for our patients.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Treatment 2 -->
+            <div class="treatment-box col-4 reveal">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/physical.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Physical Therapy</h3>
+                    <p class="text-light">
+                        Our physical therapy programs are designed to help you recover and
+                        regain strength after injury or surgery.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Treatment 3 -->
+            <div class="treatment-box  col-4 reveal">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/dental.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Dental Care</h3>
+                    <p class="text-light">
+                        Comprehensive dental services, from routine cleanings to complex
+                        procedures, to keep your smile healthy and bright.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Treatment 4 -->
+            <div class="treatment-box  col-4 reveal">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/cardio.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Cardiology</h3>
+                    <p class="text-light">
+                        Expert cardiac care to diagnose, treat, and manage heart conditions
+                        with advanced technology and compassionate care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Treatment 5: Dermatology -->
+            <div class="treatment-box  col-4 reveal">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/derma.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Dermatology</h3>
+                    <p class="text-light">
+                        Our dermatologists provide comprehensive care for all skin types, offering both cosmetic and medical solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Treatment 6: Pediatrics -->
+            <div class="treatment-box col-4 reveal">
+                <div class="background-image" style="background-image: url('@Url.Content("~/images/home/pediatric.jpg")');"></div>
+                <div class="overlay"></div>
+                <div class="text-content">
+                    <h3>Pediatrics</h3>
+                    <p class="text-light">
+                        Specialized care for children, focusing on their unique medical needs and promoting healthy development.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

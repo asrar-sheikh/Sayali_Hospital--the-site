@@ -1,0 +1,235 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+}
+
+    .slider::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+    }
+
+/* Cards */
+.card {
+    flex: 0 0 300px;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card .icon .icon {
+        font-size: 3rem;
+        color: #da035d;
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #013b79;
+    }
+
+    .card p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+/* Slider Arrows */
+.slide-arrow {
+    position: -webkit-sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(112, 124, 128, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+    .slide-arrow:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* FAQs Section */
+.faqs-section {
+    padding: 20px 5%;
+}
+
+.faq {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+    .faq:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+.faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .faq-question span {
+        font-size: 1.5rem;
+        transition: transform 0.3s;
+    }
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+    .faq-answer p {
+        color: #333;
+    }
+
+/* Newsletter Section */
+.newsletter-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0056b3;
+    color: #fff;
+}
+
+    .newsletter-section h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .newsletter-section p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+    .newsletter-form input[type="email"] {
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 30px;
+        width: 300px;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+        .newsletter-form input[type="email"]:focus {
+            border-color: #007bff;
+        }
+
+    .newsletter-form button {
+        padding: 15px 20px;
+        background: #ff6f61;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s;
+    }
+
+        .newsletter-form button:hover {
+            background: #ff4b3e;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slider {
+        padding: 20px 2%;
+    }
+
+    .card {
+        flex: 0 0 80%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+        .newsletter-form input[type="email"] {
+            width: 100%;
+        }
+}
